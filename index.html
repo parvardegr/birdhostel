@@ -42,9 +42,15 @@
         }
 
         .column img {
-            height: 12vw;
+            width: 12vw;
+            max-width: 100px;
             padding: 0;
         }
+
+        .location {
+            background-color: #f1f3f4;
+        }
+
     </style>
 </head>
 
@@ -66,13 +72,15 @@
         <div class="menu columns is-mobile is-centered">
 
             <!-- Location Icon -->
-            <div class="column is-narrow">
+            <div class="column is-narrow" onclick="scrollToMap()">
                 <img src="static/placeholder.png" alt="Location Icon">
             </div>
 
             <!-- Instagram Icon -->
             <div class="column is-narrow">
-                <img src="static/instagram.png" alt="Instagram Icon">
+                <a href="https://www.instagram.com/birdhostell" target="_blank">
+                    <img src="static/instagram.png" alt="Instagram Icon">
+                </a>
             </div>
 
             <!-- Contact Info Icon -->
@@ -83,6 +91,22 @@
         </div>
 
     </section>
+
+    <section class="location container">
+        <h2 class="title is-4">We Are Waiting For You</h2>
+        <!-- Google Map iframe with specific location coordinates -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.42792638102!2d56.3585551!3d27.237105300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef9d19122ba42a5%3A0xbe151f10a753dac!2z2KfZgtin2YXYqtqv2KfZhyDZvtix2YbYr9mHIGJpcmQgaG9zdGVs!5e0!3m2!1sen!2sat!4v1704354245508!5m2!1sen!2sat"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <script>
+        // JavaScript function to scroll to the location section
+        function scrollToMap() {
+            document.querySelector('.location').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
 </body>
 
