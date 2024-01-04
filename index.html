@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <style>
         .main {
-            height: 100vh;
+            height: 95vh;
             background-image: url('static/background.JPG');
             background-size: cover;
         }
@@ -34,7 +34,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            margin-bottom: 2vh !important;
+            margin-bottom: 5vh !important;
         }
 
         .column {
@@ -48,7 +48,16 @@
         }
 
         .location {
+            padding: 20px;
             background-color: #f1f3f4;
+        }
+
+        .contact {
+            padding-bottom: 10px;
+        }
+
+        .indent {
+            margin-left: 15px;
         }
 
     </style>
@@ -69,7 +78,7 @@
         </a>
 
         <!-- Icons -->
-        <div class="menu columns is-mobile is-centered">
+        <div class="menu columns is-centered">
 
             <!-- Location Icon -->
             <div class="column is-narrow" onclick="scrollToMap()">
@@ -93,12 +102,20 @@
     </section>
 
     <section class="location container">
-        <h2 class="title is-4">We Are Waiting For You</h2>
+        <p>We Are Waiting For You!</p>
+        <div class="contact">
+            <p>Call us</p>
+            <p class="indent">+98 938 456 8075</p>
+        </div>
+
         <!-- Google Map iframe with specific location coordinates -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.42792638102!2d56.3585551!3d27.237105300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef9d19122ba42a5%3A0xbe151f10a753dac!2z2KfZgtin2YXYqtqv2KfZhyDZvtix2YbYr9mHIGJpcmQgaG9zdGVs!5e0!3m2!1sen!2sat!4v1704354245508!5m2!1sen!2sat"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.42792638102!2d56.3585551!3d27.237105300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef9d19122ba42a5%3A0xbe151f10a753dac!2z2KfZgtin2YXYqtqv2KfZhyDZvtix2YbYr9mHIGJpcmQgaG9zdGVs!5e0!3m2!1sen!2sat!4v1704354245508!5m2!1sen!2sat"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
     <script>
