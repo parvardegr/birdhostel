@@ -1,27 +1,102 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Bird Hostel</title>
-    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bird Hostel | Affordable Stay in Bandar Abbas</title>
+
+    <!-- Meta Descriptions -->
+    <meta name="description" content="Bird Hostel in Bandar Abbas offers comfortable and affordable accommodation. Book your stay now and explore the beauty of southern Iran.">
+    <meta name="keywords" content="hostel, Bandar Abbas hostel, affordable stay, Bird Hostel, budget accommodation, Bandar Abbas, Iran travel">
+    <meta name="author" content="Bird Hostel">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Bird Hostel | Affordable Stay in Bandar Abbas">
+    <meta property="og:description" content="Discover Bird Hostel, your budget-friendly accommodation in Bandar Abbas, offering comfort and convenience.">
+    <meta property="og:image" content="https://birdhostel.ir/static/logo.png">
+    <meta property="og:url" content="https://birdhostel.ir">
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data (JSON-LD) for Google -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LodgingBusiness",
+          "name": "Bird Hostel",
+          "description": "Bird Hostel offers comfortable accommodations in Bandar Abbas, Iran, with easy access to local attractions and amenities.",
+          "image": "https://birdhostel.ir/static/logo.png",
+          "url": "https://birdhostel.ir",
+          "telephone": "+989384568075",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Example Street",
+            "addressLocality": "Bandar Abbas",
+            "addressRegion": "Hormozgan",
+            "postalCode": "7915677890",
+            "addressCountry": "IR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 27.2371053,
+            "longitude": 56.3585551
+          },
+          "priceRange": "$",
+          "checkinTime": "14:00",
+          "checkoutTime": "12:00",
+          "paymentAccepted": "Cash, Credit Card",
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Free WiFi",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Air Conditioning",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "24-hour Reception",
+              "value": true
+            }
+          ],
+          "hasMap": "https://www.google.com/maps?q=27.2371053,56.3585551",
+          "sameAs": [
+            "https://www.instagram.com/birdhostell"
+          ]
+        }
+    </script>        
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6SDQ0CWMT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-P6SDQ0CWMT');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <style>
         body {
             background-color: #f1f3f4;
         }
-
         .main {
             height: 95vh;
             background-image: url('static/background.JPG');
             background-size: cover;
         }
-
         .logo {
             width: 230px;
             padding-top: 12vh;
         }
-
         .cta {
             margin-top: 128px;
             width: 45vw;
@@ -30,7 +105,6 @@
             color: #fbfbfb !important;
             font-family: monospace;
         }
-
         .menu {
             padding: 0;
             margin: 0;
@@ -40,135 +114,35 @@
             right: 0;
             margin-bottom: 6.5vh !important;
         }
-
         .column {
             margin: 0 3vw;
         }
-
         .column img {
             width: 12vw;
             max-width: 100px;
             padding: 0;
         }
-
         .location {
             padding: 20px;
             background-color: #f1f3f4;
         }
-
         .location-slogan {
             padding: 40px 0 15px 0;
         }
-
         .contact {
             padding-bottom: 10px;
         }
-
         .indent {
             margin-left: 15px;
         }
-
-        /* section devider */
-        .section-devider {
-            background-color: #f1f3f4;
-        }
-
-        .devider {
-            display: block;
-            width: 100%;
-            height: 60px;
-            max-height: 60px;
-            margin: 0;
-            z-index: 5;
-            bottom: 0;
-            position: absolute;
-            left: 0px;
-            float: left;
-        }
-
-        .parallax1>use {
-            animation: move-forever1 10s linear infinite;
-
-            &:nth-child(1) {
-                animation-delay: -2s;
-            }
-        }
-
-        .parallax2>use {
-            animation: move-forever2 8s linear infinite;
-
-            &:nth-child(1) {
-                animation-delay: -2s;
-            }
-        }
-
-        .parallax3>use {
-            animation: move-forever3 6s linear infinite;
-
-            &:nth-child(1) {
-                animation-delay: -2s;
-            }
-        }
-
-        .parallax4>use {
-            animation: move-forever4 4s linear infinite;
-
-            &:nth-child(1) {
-                animation-delay: -2s;
-            }
-        }
-
-        @keyframes move-forever1 {
-            0% {
-                transform: translate(85px, 0%);
-            }
-
-            100% {
-                transform: translate(-90px, 0%);
-            }
-        }
-
-        @keyframes move-forever2 {
-            0% {
-                transform: translate(-90px, 0%);
-            }
-
-            100% {
-                transform: translate(85px, 0%);
-            }
-        }
-
-        @keyframes move-forever3 {
-            0% {
-                transform: translate(85px, 0%);
-            }
-
-            100% {
-                transform: translate(-90px, 0%);
-            }
-        }
-
-        @keyframes move-forever4 {
-            0% {
-                transform: translate(-90px, 0%);
-            }
-
-            100% {
-                transform: translate(85px, 0%);
-            }
-        }
-        /* end section devider */
-
     </style>
 </head>
 
 <body>
-
     <section class="main container has-text-centered">
-
         <!-- Logo Image -->
         <figure class="logo image container mb-5">
-            <img src="static/logo.png" alt="Bird Hostel Logo Image">
+            <img src="static/logo.png" alt="Bird Hostel Logo - Affordable Stay in Bandar Abbas">
         </figure>
 
         <!-- Call To Action Button -->
@@ -176,28 +150,15 @@
             Reservation
         </a>
 
-        <!-- Icons -->
+        <!-- Social Icons -->
         <div class="menu columns is-centered">
-
-            <!-- Location Icon -->
-            <!-- <div class="column is-narrow" onclick="scrollToMap()">
-                <img src="static/placeholder.png" alt="Location Icon">
-            </div> -->
-
             <!-- Instagram Icon -->
             <div class="column is-narrow">
                 <a href="https://www.instagram.com/birdhostell" target="_blank">
-                    <img src="static/instagram.png" alt="Instagram Icon">
+                    <img src="static/instagram.png" alt="Follow Bird Hostel on Instagram">
                 </a>
             </div>
-
-            <!-- Contact Info Icon -->
-            <!-- <div class="column is-narrow">
-                <img src="static/technology.png" alt="Contact Info Icon">
-            </div> -->
-
         </div>
-
     </section>
 
     <div class="section-devider container">
@@ -233,23 +194,12 @@
             <p class="indent">+98 938 456 8075</p>
         </div>
 
-        <!-- Google Map iframe with specific location coordinates -->
-        <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.42792638102!2d56.3585551!3d27.237105300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef9d19122ba42a5%3A0xbe151f10a753dac!2z2KfZgtin2YXYqtqv2KfZhyDZvtix2YbYr9mHIGJpcmQgaG9zdGVs!5e0!3m2!1sen!2sat!4v1704354245508!5m2!1sen!2sat"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+        <!-- Google Map -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.42792638102!2d56.3585551!3d27.237105300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef9d19122ba42a5%3A0xbe151f10a753dac!2z2KfZgtin2YXYqtqv2KfZhyDZvtix2YbYr9mHIGJpcmQgaG9zdGVs!5e0!3m2!1sen!2sat!4v1704354245508!5m2!1sen!2sat"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
-
-    <script>
-        // JavaScript function to scroll to the location section
-        function scrollToMap() {
-            document.querySelector('.location').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-
 </body>
-
 </html>
