@@ -88,15 +88,18 @@
         body {
             background-color: #f1f3f4;
         }
+
         .main {
             height: 95vh;
             background-image: url('static/background.JPG');
             background-size: cover;
         }
+
         .logo {
             width: 230px;
             padding-top: 12vh;
         }
+
         .cta {
             margin-top: 128px;
             width: 45vw;
@@ -105,6 +108,7 @@
             color: #fbfbfb !important;
             font-family: monospace;
         }
+
         .menu {
             padding: 0;
             margin: 0;
@@ -114,27 +118,125 @@
             right: 0;
             margin-bottom: 6.5vh !important;
         }
+
         .column {
             margin: 0 3vw;
         }
+
         .column img {
             width: 12vw;
             max-width: 100px;
             padding: 0;
         }
+
         .location {
             padding: 20px;
             background-color: #f1f3f4;
         }
+
         .location-slogan {
             padding: 40px 0 15px 0;
         }
+
         .contact {
             padding-bottom: 10px;
         }
+
         .indent {
             margin-left: 15px;
         }
+
+        /* section devider */
+        .section-devider {
+            background-color: #f1f3f4;
+        }
+
+        .devider {
+            display: block;
+            width: 100%;
+            height: 60px;
+            max-height: 60px;
+            margin: 0;
+            z-index: 5;
+            bottom: 0;
+            position: absolute;
+            left: 0px;
+            float: left;
+        }
+
+        .parallax1>use {
+            animation: move-forever1 10s linear infinite;
+
+            &:nth-child(1) {
+                animation-delay: -2s;
+            }
+        }
+
+        .parallax2>use {
+            animation: move-forever2 8s linear infinite;
+
+            &:nth-child(1) {
+                animation-delay: -2s;
+            }
+        }
+
+        .parallax3>use {
+            animation: move-forever3 6s linear infinite;
+
+            &:nth-child(1) {
+                animation-delay: -2s;
+            }
+        }
+
+        .parallax4>use {
+            animation: move-forever4 4s linear infinite;
+
+            &:nth-child(1) {
+                animation-delay: -2s;
+            }
+        }
+
+        @keyframes move-forever1 {
+            0% {
+                transform: translate(85px, 0%);
+            }
+
+            100% {
+                transform: translate(-90px, 0%);
+            }
+        }
+
+        @keyframes move-forever2 {
+            0% {
+                transform: translate(-90px, 0%);
+            }
+
+            100% {
+                transform: translate(85px, 0%);
+            }
+        }
+
+        @keyframes move-forever3 {
+            0% {
+                transform: translate(85px, 0%);
+            }
+
+            100% {
+                transform: translate(-90px, 0%);
+            }
+        }
+
+        @keyframes move-forever4 {
+            0% {
+                transform: translate(-90px, 0%);
+            }
+
+            100% {
+                transform: translate(85px, 0%);
+            }
+        }
+        /* end section devider */
+
     </style>
 </head>
 
